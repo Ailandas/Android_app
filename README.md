@@ -1,2 +1,4 @@
 # Android_app
-![alt text](https://github.com/Ailandas/Android_app/blob/1.png)
+Calendar application, using java, Android studio
+Ability to add new events, delete. See them in calendar.
+Local storage

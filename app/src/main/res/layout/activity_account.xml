@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#00579b">
+
+    <LinearLayout
+        android:id="@+id/LoggedIn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:text="Your email"
+            android:textColor="#B6B6B6" />
+
+        <EditText
+            android:id="@+id/loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:hint="Your password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:paddingLeft="5dp"
+            android:text="Login" />
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/google_sign_up"
+            app:isDarkTheme="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LoggedOut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/RegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:text="Your name"
+            android:textColor="#9C9B9B"
+
+
+            />
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:text="Your email"
+            android:textColor="#B6B6B6" />
+
+        <EditText
+            android:id="@+id/registerPass"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:hint="Your password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/registerPass2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:ems="10"
+            android:hint="Re type your password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/registerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:fontFamily="cursive"
+            android:paddingLeft="5dp"
+            android:text="Already have an account? sign in"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonNoAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedcorners"
+            android:paddingLeft="5dp"
+            android:text="Register" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botomnav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#022b4f"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu"
+        tools:layout_editor_absoluteX="9dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
